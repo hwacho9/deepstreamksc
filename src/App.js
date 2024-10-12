@@ -24,7 +24,6 @@ import UserProfile from "./Register/UserProfile";
 import CreateReservationSettings from "./Administrator/CreateReservationSettings";
 import CreateReservationTemplate from "./Administrator/CreateReservationTemplate";
 import ReservationStatusPage from "./Administrator/ReservationStatusPage";
-import FixTimeSlots from "./Administrator/FixTimeSlots";
 
 const SettingInfo = {
   Year: "2023"
@@ -71,11 +70,10 @@ function App() {
           <Route exact path="/adminschedulepost" element={<AdminSchedulePost />}></Route>
           <Route exact path="/adminhome" element={<AdminHome />}></Route>
           <Route exact path="/adminlogin" element={<AdminLogin />}></Route>
-          {/* <Route exact path="/auto-reservation-admin" element={<AutoReservationAdmin />}></Route> */}
+
           <Route exact path="/create-reservation-settings" element={<CreateReservationSettings />}></Route>
           <Route exact path="/create-reservation-template" element={<CreateReservationTemplate />}></Route>
           <Route exact path="/reservation-check" element={<ReservationStatusPage />}></Route>
-          <Route exact path="/fix-time-slots" element={<FixTimeSlots />}></Route>
 
           <Route exact path="/calendar" element={<Calendar />}></Route>
           <Route exact path="/key" element={<Key />}></Route>
